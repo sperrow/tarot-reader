@@ -1,0 +1,392 @@
+[
+    {
+        "index": 0,
+        "name": "The Fool",
+        "image": "00-TheFool.jpg"
+    },
+    {
+        "index": 1,
+        "name": "The Magician",
+        "image": "01-TheMagician.jpg"
+    },
+    {
+        "index": 2,
+        "name": "The High Priestess",
+        "image": "02-TheHighPriestess.jpg"
+    },
+    {
+        "index": 3,
+        "name": "The Empress",
+        "image": "03-TheEmpress.jpg"
+    },
+    {
+        "index": 4,
+        "name": "The Emperor",
+        "image": "04-TheEmperor.jpg"
+    },
+    {
+        "index": 5,
+        "name": "The Hierophant",
+        "image": "05-TheHierophant.jpg"
+    },
+    {
+        "index": 6,
+        "name": "The Lovers",
+        "image": "06-TheLovers.jpg"
+    },
+    {
+        "index": 7,
+        "name": "The Chariot",
+        "image": "07-TheChariot.jpg"
+    },
+    {
+        "index": 8,
+        "name": "Strength",
+        "image": "08-Strength.jpg"
+    },
+    {
+        "index": 9,
+        "name": "The Hermit",
+        "image": "09-TheHermit.jpg"
+    },
+    {
+        "index": 10,
+        "name": "Wheel Of Fortune",
+        "image": "10-WheelOfFortune.jpg"
+    },
+    {
+        "index": 11,
+        "name": "Justice",
+        "image": "11-Justice.jpg"
+    },
+    {
+        "index": 12,
+        "name": "The Hanged Man",
+        "image": "12-TheHangedMan.jpg"
+    },
+    {
+        "index": 13,
+        "name": "Death",
+        "image": "13-Death.jpg"
+    },
+    {
+        "index": 14,
+        "name": "Temperance",
+        "image": "14-Temperance.jpg"
+    },
+    {
+        "index": 15,
+        "name": "The Devil",
+        "image": "15-TheDevil.jpg"
+    },
+    {
+        "index": 16,
+        "name": "The Tower",
+        "image": "16-TheTower.jpg"
+    },
+    {
+        "index": 17,
+        "name": "The Star",
+        "image": "17-TheStar.jpg"
+    },
+    {
+        "index": 18,
+        "name": "The Moon",
+        "image": "18-TheMoon.jpg"
+    },
+    {
+        "index": 19,
+        "name": "The Sun",
+        "image": "19-TheSun.jpg"
+    },
+    {
+        "index": 20,
+        "name": "Judgement",
+        "image": "20-Judgement.jpg"
+    },
+    {
+        "index": 21,
+        "name": "The World",
+        "image": "21-TheWorld.jpg"
+    },
+    {
+        "index": 22,
+        "name": "Ace of Cups",
+        "image": "Cups01.jpg"
+    },
+    {
+        "index": 23,
+        "name": "Two of Cups",
+        "image": "Cups02.jpg"
+    },
+    {
+        "index": 24,
+        "name": "Three of Cups",
+        "image": "Cups03.jpg"
+    },
+    {
+        "index": 25,
+        "name": "Four of Cups",
+        "image": "Cups04.jpg"
+    },
+    {
+        "index": 26,
+        "name": "Five of Cups",
+        "image": "Cups05.jpg"
+    },
+    {
+        "index": 27,
+        "name": "Six of Cups",
+        "image": "Cups06.jpg"
+    },
+    {
+        "index": 28,
+        "name": "Seven of Cups",
+        "image": "Cups07.jpg"
+    },
+    {
+        "index": 29,
+        "name": "Eight of Cups",
+        "image": "Cups08.jpg"
+    },
+    {
+        "index": 30,
+        "name": "Nine of Cups",
+        "image": "Cups09.jpg"
+    },
+    {
+        "index": 31,
+        "name": "Ten of Cups",
+        "image": "Cups10.jpg"
+    },
+    {
+        "index": 32,
+        "name": "Page of Cups",
+        "image": "Cups11.jpg"
+    },
+    {
+        "index": 33,
+        "name": "Knight of Cups",
+        "image": "Cups12.jpg"
+    },
+    {
+        "index": 34,
+        "name": "Queen of Cups",
+        "image": "Cups13.jpg"
+    },
+    {
+        "index": 35,
+        "name": "King of Cups",
+        "image": "Cups14.jpg"
+    },
+    {
+        "index": 36,
+        "name": "Ace of Pentacles",
+        "image": "Pentacles01.jpg"
+    },
+    {
+        "index": 37,
+        "name": "Two of Pentacles",
+        "image": "Pentacles02.jpg"
+    },
+    {
+        "index": 38,
+        "name": "Three of Pentacles",
+        "image": "Pentacles03.jpg"
+    },
+    {
+        "index": 39,
+        "name": "Four of Pentacles",
+        "image": "Pentacles04.jpg"
+    },
+    {
+        "index": 40,
+        "name": "Five of Pentacles",
+        "image": "Pentacles05.jpg"
+    },
+    {
+        "index": 41,
+        "name": "Six of Pentacles",
+        "image": "Pentacles06.jpg"
+    },
+    {
+        "index": 42,
+        "name": "Seven of Pentacles",
+        "image": "Pentacles07.jpg"
+    },
+    {
+        "index": 43,
+        "name": "Eight of Pentacles",
+        "image": "Pentacles08.jpg"
+    },
+    {
+        "index": 44,
+        "name": "Nine of Pentacles",
+        "image": "Pentacles09.jpg"
+    },
+    {
+        "index": 45,
+        "name": "Ten of Pentacles",
+        "image": "Pentacles10.jpg"
+    },
+    {
+        "index": 46,
+        "name": "Page of Pentacles",
+        "image": "Pentacles11.jpg"
+    },
+    {
+        "index": 47,
+        "name": "Knight of Pentacles",
+        "image": "Pentacles12.jpg"
+    },
+    {
+        "index": 48,
+        "name": "Queen of Pentacles",
+        "image": "Pentacles13.jpg"
+    },
+    {
+        "index": 49,
+        "name": "King of Pentacles",
+        "image": "Pentacles14.jpg"
+    },
+    {
+        "index": 50,
+        "name": "Ace of Swords",
+        "image": "Swords01.jpg"
+    },
+    {
+        "index": 51,
+        "name": "Two of Swords",
+        "image": "Swords02.jpg"
+    },
+    {
+        "index": 52,
+        "name": "Three of Swords",
+        "image": "Swords03.jpg"
+    },
+    {
+        "index": 53,
+        "name": "Four of Swords",
+        "image": "Swords04.jpg"
+    },
+    {
+        "index": 54,
+        "name": "Five of Swords",
+        "image": "Swords05.jpg"
+    },
+    {
+        "index": 55,
+        "name": "Six of Swords",
+        "image": "Swords06.jpg"
+    },
+    {
+        "index": 56,
+        "name": "Seven of Swords",
+        "image": "Swords07.jpg"
+    },
+    {
+        "index": 57,
+        "name": "Eight of Swords",
+        "image": "Swords08.jpg"
+    },
+    {
+        "index": 58,
+        "name": "Nine of Swords",
+        "image": "Swords09.jpg"
+    },
+    {
+        "index": 59,
+        "name": "Ten of Swords",
+        "image": "Swords10.jpg"
+    },
+    {
+        "index": 60,
+        "name": "Page of Swords",
+        "image": "Swords11.jpg"
+    },
+    {
+        "index": 61,
+        "name": "Knight of Swords",
+        "image": "Swords12.jpg"
+    },
+    {
+        "index": 62,
+        "name": "Queen of Swords",
+        "image": "Swords13.jpg"
+    },
+    {
+        "index": 63,
+        "name": "King of Swords",
+        "image": "Swords14.jpg"
+    },
+    {
+        "index": 64,
+        "name": "Ace of Wands",
+        "image": "Wands01.jpg"
+    },
+    {
+        "index": 65,
+        "name": "Two of Wands",
+        "image": "Wands02.jpg"
+    },
+    {
+        "index": 66,
+        "name": "Three of Wands",
+        "image": "Wands03.jpg"
+    },
+    {
+        "index": 67,
+        "name": "Four of Wands",
+        "image": "Wands04.jpg"
+    },
+    {
+        "index": 68,
+        "name": "Five of Wands",
+        "image": "Wands05.jpg"
+    },
+    {
+        "index": 69,
+        "name": "Six of Wands",
+        "image": "Wands06.jpg"
+    },
+    {
+        "index": 70,
+        "name": "Seven of Wands",
+        "image": "Wands07.jpg"
+    },
+    {
+        "index": 71,
+        "name": "Eight of Wands",
+        "image": "Wands08.jpg"
+    },
+    {
+        "index": 72,
+        "name": "Nine of Wands",
+        "image": "Wands09.jpg"
+    },
+    {
+        "index": 73,
+        "name": "Ten of Wands",
+        "image": "Wands10.jpg"
+    },
+    {
+        "index": 74,
+        "name": "Page of Wands",
+        "image": "Wands11.jpg"
+    },
+    {
+        "index": 75,
+        "name": "Knight of Wands",
+        "image": "Wands12.jpg"
+    },
+    {
+        "index": 76,
+        "name": "Queen of Wands",
+        "image": "Wands13.jpg"
+    },
+    {
+        "index": 77,
+        "name": "King of Wands",
+        "image": "Wands14.jpg"
+    }
+]
