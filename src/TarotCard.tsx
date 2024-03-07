@@ -24,10 +24,10 @@ function TarotCard({ card, selected, flipped, onClick }: TarotCardProps) {
             <button className={outerClasses} onClick={handleClick}>
                 <div className="flip-card-inner">
                     <div className="flip-card-front">
-                        <img className="w-full h-full flip-card-image rounded" src="/cardBack.png" alt="card back" />
+                        <img className="w-full h-full flip-card-image rounded" src={`${import.meta.env.BASE_URL}/cardBack.png`} alt="card back" />
                     </div>
                     <div className="flip-card-back">
-                        <img className="w-full h-full flip-card-image" src={`/cards/${card.image}`} alt="card face" />
+                        <img className="w-full h-full flip-card-image" src={`${import.meta.env.BASE_URL}/cards/${card.image}`} alt="card face" />
                     </div>
                 </div>
             </button>
