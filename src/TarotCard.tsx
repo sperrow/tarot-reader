@@ -25,7 +25,7 @@ function TarotCard({ card, selected, flipped, onClick }: TarotCardProps) {
                         <img className="w-full h-full flip-card-image rounded" src={cardBack} alt="card back" />
                     </div>
                     <div className="flip-card-back">
-                        <img className="w-full h-full flip-card-image" src={`cards/${card.image}`} alt="card face" />
+                        <img className="w-full h-full flip-card-image" src={`/cards/${card.image}`} alt="card face" />
                     </div>
                 </div>
             </button>
