@@ -31,7 +31,8 @@ function TarotDeck({ start }: CardsProps) {
     const [deck, setDeck] = useState(shuffled);
     const [selectedCards, setSelectedCards] = useState<SelectedCards>(new Set());
     const [parent] = useAutoAnimate({ duration: 1000 });
-    const [classes, setClasses] = useState('max-w-md grid grid-cols-12 gap-y-4 justify-center items-center');
+    const [classes, setClasses] = useState('max-w-md flex flex-wrap justify-center items-center');
+    // const [classes, setClasses] = useState('max-w-md grid grid-cols-12 gap-y-4 justify-center items-center');
     const handleClick = (index: number) => {
         const newSet = new Set(selectedCards);
         if (newSet.size === 3) {

@@ -13,7 +13,7 @@
 
 .flip-card {
     background-color: transparent;
-    width: 1.5rem;
+    width: 1rem;
     height: 8rem;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     position: relative;
@@ -35,6 +35,7 @@
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flipped .flip-card-inner {
     transform: rotateY(180deg);
+    width: 6rem;
 }
 
 /* Position the front and back side */
@@ -61,10 +62,16 @@
 .flip-card-image {
     background-color: #bbb;
     filter: brightness(0.75);
-    transition: filter 0.8s, transform 0.8s;
+    transition: filter 0.5s, transform 0.5s;
 }
 
-.selected .flip-card-image {
+.flip-card:hover .flip-card-image, .selected .flip-card-image {
     transform: translateY(-1rem);
     filter: brightness(1);
+}
+
+.flipped .flip-card-image {
+    width: 6rem;
+    height: 10rem;
+    transform: translateY(-2rem);
 }

@@ -2,23 +2,7 @@ import OpenAI from 'openai';
 
 const openai = new OpenAI({ apiKey: import.meta.env.VITE_OPENAI_API_KEY, dangerouslyAllowBrowser: true });
 
-// async function main() {
-//     const completion = await openai.chat.completions.create({
-//         messages: [
-//             { role: 'system', content: 'You are a helpful assistant.' },
-//             {
-//                 role: 'user',
-//                 content:
-//                     'Give me 20 trivia questions about the biggest pop culture stories in 2009. Format should be JSON.',
-//             },
-//         ],
-//         model: 'gpt-4',
-//     });
-
-//     console.log(completion.choices[0]);
-// }    
-
-async function main(cards: string[]) {
+async function main(cards: string[], question: string) {
     try {
         const completion = await openai.chat.completions.create({
             messages: [
@@ -26,7 +10,7 @@ async function main(cards: string[]) {
                 {
                     role: 'user',
                     content: `
-                        Generate a Tarot Card Reading with tarot cards from Major and Minor Arcana. The three cards you use are ${cards.join(', ')}. The question you're answering is "Should I go to Paris for the summer?".
+                        Generate a Tarot Card Reading with tarot cards from Major and Minor Arcana. The three cards you use are ${cards.join(', ')}. The question you're answering is "${question}".
                         
                         Provide a cards array with an explanation for each card's meaning. Then provide a detailed summary of the meaning of all three cards together.
     
@@ -49,7 +33,6 @@ async function main(cards: string[]) {
     } catch (err) {
         console.error(err);
     }
-    // console.log(JSON.parse(completion.choices[0].message.content));
 }
 
 export default main;
