@@ -1,4 +1,4 @@
-import cardBack from '../public/cardBack.png';
+// import cardBack from '../public/cardBack.png';
 import { Card } from './types/Card.ts';
 import './TarotCard.css';
 
@@ -16,13 +16,15 @@ function TarotCard({ card, selected, flipped, onClick }: TarotCardProps) {
             onClick(card.index);
         }
     };
-    const outerClasses = `flip-card flip-card-button flex justify-center ${flipped ? 'flipped' : ''} ${selected ? 'selected' : ''}`;
+    const outerClasses = `flip-card flip-card-button flex justify-center ${flipped ? 'flipped' : ''} ${
+        selected ? 'selected' : ''
+    }`;
     return (
         <div>
             <button className={outerClasses} onClick={handleClick}>
                 <div className="flip-card-inner">
                     <div className="flip-card-front">
-                        <img className="w-full h-full flip-card-image rounded" src={cardBack} alt="card back" />
+                        <img className="w-full h-full flip-card-image rounded" src="/cardBack.png" alt="card back" />
                     </div>
                     <div className="flip-card-back">
                         <img className="w-full h-full flip-card-image" src={`/cards/${card.image}`} alt="card face" />
