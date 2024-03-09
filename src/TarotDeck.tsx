@@ -31,8 +31,7 @@ function TarotDeck({ start }: CardsProps) {
     const [deck, setDeck] = useState(shuffled);
     const [selectedCards, setSelectedCards] = useState<SelectedCards>(new Set());
     const [parent] = useAutoAnimate({ duration: 1000 });
-    const [classes, setClasses] = useState('max-w-md flex flex-wrap justify-center items-center');
-    // const [classes, setClasses] = useState('max-w-md grid grid-cols-12 gap-y-4 justify-center items-center');
+    const [classes, setClasses] = useState('max-w-md flex flex-wrap justify-center items-center ml-8');
     const handleClick = (index: number) => {
         const newSet = new Set(selectedCards);
         if (newSet.size === 3) {
@@ -53,7 +52,7 @@ function TarotDeck({ start }: CardsProps) {
                 }
             });
             setDeck(selected);
-            setClasses('max-w-md grid grid-cols-3 gap-x-20 gap-y-4 justify-center items-center');
+            setClasses('max-w-md flex flex-wrap justify-between items-center ml-8');
             start(selected);
         }
     };
@@ -61,12 +60,9 @@ function TarotDeck({ start }: CardsProps) {
     return (
         <div ref={parent} className={classes}>
             {deck.map((card) => (
-                <TarotCard
-                    key={card.index}
-                    card={card}
-                    onClick={handleClick}
-                    selected={selectedCards.has(card.index)}
-                ></TarotCard>
+                <div key={card.index} className="-ml-8">
+                    <TarotCard card={card} onClick={handleClick} selected={selectedCards.has(card.index)}></TarotCard>
+                </div>
             ))}
         </div>
     );

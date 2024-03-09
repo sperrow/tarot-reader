@@ -13,10 +13,14 @@
 
 .flip-card {
     background-color: transparent;
-    width: 1rem;
+    width: 4rem;
     height: 8rem;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     position: relative;
+}
+
+.reading .flip-card {
+    height: 7rem;
 }
 
 /* This container is needed to position the front and back side */
@@ -28,7 +32,7 @@
     width: 4rem;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 1s;
     transform-style: preserve-3d;
 }
 
@@ -60,18 +64,23 @@
 }
 
 .flip-card-image {
-    background-color: #bbb;
-    filter: brightness(0.75);
+    background-color: white;
+    filter: brightness(0.8);
     transition: filter 0.5s, transform 0.5s;
+    box-sizing: content-box;
+    border: 2px solid transparent;
 }
 
-.flip-card:hover .flip-card-image, .selected .flip-card-image {
+.flip-card:hover .flip-card-image,
+.selected .flip-card-image {
     transform: translateY(-1rem);
+}
+.reading .flip-card:hover .flip-card-image {
+    transform: none;
     filter: brightness(1);
 }
 
-.flipped .flip-card-image {
-    width: 6rem;
-    height: 10rem;
-    transform: translateY(-2rem);
+.selected .flip-card-image {
+    filter: brightness(1);
+    border-color: gold;
 }
