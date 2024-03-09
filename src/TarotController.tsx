@@ -25,7 +25,7 @@ function TarotController() {
     }`;
 
     const handleGeneralClick = () => {
-        setQuestion('General Knowledge');
+        setQuestion('');
         setStep(step + 2);
     };
 
@@ -45,6 +45,7 @@ function TarotController() {
         //     setStep(step + 1);
         //     setLoading(false);
         // }, 1000);
+
         const cardNames = cards.map((card) => card.name);
         const res = await read(cardNames, question);
         if (res) {
@@ -57,45 +58,45 @@ function TarotController() {
         }
     };
 
-// const testCards = [
-//     {
-//         index: 71,
-//         name: 'Eight of Wands',
-//         image: 'Wands08.jpg',
-//     },
-//     {
-//         index: 62,
-//         name: 'Queen of Swords',
-//         image: 'Swords13.jpg',
-//     },
-//     {
-//         index: 13,
-//         name: 'Death',
-//         image: '13-Death.jpg',
-//     },
-// ];
+    // const testCards = [
+    //     {
+    //         index: 71,
+    //         name: 'Eight of Wands',
+    //         image: 'Wands08.jpg',
+    //     },
+    //     {
+    //         index: 62,
+    //         name: 'Queen of Swords',
+    //         image: 'Swords13.jpg',
+    //     },
+    //     {
+    //         index: 13,
+    //         name: 'Death',
+    //         image: '13-Death.jpg',
+    //     },
+    // ];
 
-// const testSummaries = {
-//     card_summaries: [
-//         {
-//             name: 'Eight of Wands',
-//             summary:
-//                 'The Eight of Wands represents swift communication, travel, and fast-paced movement. It signifies sudden developments and rapid progress.',
-//         },
-//         {
-//             name: 'Queen of Swords',
-//             summary:
-//                 'The Queen of Swords embodies intellect, clear communication, and independence. She encourages rational decision-making and facing situations with logic and truth.',
-//         },
-//         {
-//             name: 'Death',
-//             summary:
-//                 'Death is a card of transformation and endings, symbolizing the closure of one chapter to make way for new beginnings. It represents major changes and release of the past.',
-//         },
-//     ],
-//     all_summary:
-//         'The cards suggest that traveling to Paris for the summer might bring about swift changes and transformations in your life. The Eight of Wands indicates a quick decision to travel, while the Queen of Swords advises making a logical choice. The Death card signifies a significant transformation or ending, suggesting that going to Paris could lead to a profound change or closure in some aspect of your life. Overall, the cards indicate that the trip may bring about important shifts and new beginnings, urging you to embrace change with a clear and rational mindset.',
-// };
+    // const testSummaries = {
+    //     card_summaries: [
+    //         {
+    //             name: 'Eight of Wands',
+    //             summary:
+    //                 'The Eight of Wands represents swift communication, travel, and fast-paced movement. It signifies sudden developments and rapid progress.',
+    //         },
+    //         {
+    //             name: 'Queen of Swords',
+    //             summary:
+    //                 'The Queen of Swords embodies intellect, clear communication, and independence. She encourages rational decision-making and facing situations with logic and truth.',
+    //         },
+    //         {
+    //             name: 'Death',
+    //             summary:
+    //                 'Death is a card of transformation and endings, symbolizing the closure of one chapter to make way for new beginnings. It represents major changes and release of the past.',
+    //         },
+    //     ],
+    //     all_summary:
+    //         'The cards suggest that traveling to Paris for the summer might bring about swift changes and transformations in your life. The Eight of Wands indicates a quick decision to travel, while the Queen of Swords advises making a logical choice. The Death card signifies a significant transformation or ending, suggesting that going to Paris could lead to a profound change or closure in some aspect of your life. Overall, the cards indicate that the trip may bring about important shifts and new beginnings, urging you to embrace change with a clear and rational mindset.',
+    // };
 
     const currentStep =
         step === 0 ? (
@@ -137,13 +138,13 @@ function TarotController() {
             </div>
         ) : step === 2 ? (
             <div>
-                <h2 className="mb-8 text-xl">Your Question: "{question}"</h2>
-                <h3 className="mb-8">Select three cards</h3>
+                {question === '' ? null : <h2 className="mb-8 text-xl">Your Question: "{question}"</h2>}
+                {loading ? null : <h3 className="mb-8">Select three cards</h3>}
                 <TarotDeck start={handleStart}></TarotDeck>
             </div>
         ) : step === 3 && summaries ? (
             <div>
-                <h2 className="mb-8 text-xl">Your Question: "{question}"</h2>
+                {question === '' ? null : <h2 className="mb-8 text-xl">Your Question: "{question}"</h2>}
                 <Reading cards={selectedCards} summaries={summaries}></Reading>
             </div>
         ) : null;
