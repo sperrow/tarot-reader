@@ -5,6 +5,7 @@ import TarotController from './TarotController.tsx';
 function App() {
     return (
         <>
+        <div className='dark:text-white'>
             <header className="flex flex-col items-center justify-center">
                 <div className="text-4xl mb-8">
                     <h1>Tarot Reading</h1>
@@ -18,6 +19,7 @@ function App() {
                     <img src={github} alt="github" className="w-5" />
                 </a>
             </footer>
+        </div>
         </>
     );
 }
