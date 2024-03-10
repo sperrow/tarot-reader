@@ -52,7 +52,7 @@ function TarotDeck({ start }: CardsProps) {
                 }
             });
             setDeck(selected);
-            setClasses('w-80 max-w-md flex flex-wrap justify-between items-center ml-8');
+            setClasses('w-80 max-w-md flex flex-wrap justify-between items-center ml-8 mt-48');
             start(selected);
         }
     };

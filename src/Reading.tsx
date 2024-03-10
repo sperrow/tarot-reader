@@ -61,9 +61,11 @@ function Reading({ cards, summaries }: ReadingProps) {
                 ))}
             </div>
             <Modal card={currentCard} open={modalOpen} close={handleClose}></Modal>
-            <div ref={summaryRef} className="mt-16">
-                {flipCount > 2 ? <p className="text-left p-4">{summaries.all_summary}</p> : null}
-            </div>
+            {flipCount > 2 ? (
+                <div ref={summaryRef} className="mt-16 card rounded bg-gray-100 dark:bg-gray-700">
+                    <p className="text-left p-4">{summaries.all_summary}</p>
+                </div>
+            ) : null}
         </div>
     );
 }

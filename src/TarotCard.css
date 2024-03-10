@@ -20,7 +20,7 @@
 }
 
 .reading .flip-card {
-    height: 7rem; /* Account for container */
+    height: 7rem; /* Account for reading container */
 }
 
 /* This container is needed to position the front and back side */
@@ -82,7 +82,7 @@
 
     .reading .flip-card:hover .flip-card-image {
         transform: none;
-        filter: brightness(1);
+        filter: brightness(1.2);
     }
 }
 
@@ -90,7 +90,7 @@
     transform: translateY(-1rem);
 }
 
-.selected .flip-card-image {
+.selected .flip-card-image, .reading .flip-card-image {
     filter: brightness(1);
     border-color: gold;
 }
