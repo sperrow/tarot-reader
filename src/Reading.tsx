@@ -55,7 +55,7 @@ function Reading({ cards, summaries }: ReadingProps) {
             <div className="mt-18">
                 {flipCount < 3 ? <h3 className="mb-8 text-amber-500">Click to Flip</h3> : null}
                 {cards.map((card) => (
-                    <div key={card.index} className="mb-16 card rounded bg-slate-100 dark:bg-slate-800">
+                    <div key={card.index} className="mb-16 card rounded bg-gray-100 dark:bg-gray-700">
                         <TarotCard card={card} reading={true} onClick={handleCardClick}></TarotCard>
                     </div>
                 ))}
