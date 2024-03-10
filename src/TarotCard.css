@@ -20,7 +20,7 @@
 }
 
 .reading .flip-card {
-    height: 7rem;
+    height: 7rem; /* Account for container */
 }
 
 /* This container is needed to position the front and back side */
@@ -39,7 +39,7 @@
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flipped .flip-card-inner {
     transform: rotateY(180deg);
-    width: 6rem;
+    /* width: 6rem; */
 }
 
 /* Position the front and back side */
