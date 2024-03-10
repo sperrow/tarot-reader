@@ -71,13 +71,23 @@
     border: 2px solid transparent;
 }
 
-.flip-card:hover .flip-card-image,
+@media (hover: hover) {
+    .flip-card-button:hover {
+        border-color: transparent;
+    }
+
+    .flip-card:hover .flip-card-image {
+        transform: translateY(-1rem);
+    }
+
+    .reading .flip-card:hover .flip-card-image {
+        transform: none;
+        filter: brightness(1);
+    }
+}
+
 .selected .flip-card-image {
     transform: translateY(-1rem);
-}
-.reading .flip-card:hover .flip-card-image {
-    transform: none;
-    filter: brightness(1);
 }
 
 .selected .flip-card-image {
