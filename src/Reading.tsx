@@ -51,7 +51,7 @@ function Reading({ cards, summaries }: ReadingProps) {
     };
 
     return (
-        <div className="w-96 max-w-sm md:max-w-md w-full p-4">
+        <div className="w-96 max-w-sm md:max-w-md p-4">
             <div className="mt-18">
                 {flipCount < 3 ? <h3 className="mb-8 text-amber-500">Click to Flip</h3> : null}
                 {cards.map((card) => (
