@@ -19,7 +19,7 @@ async function main(cards: string[], question: string) {
 
                         The output should be json in this format: {"card_summaries": [{"name": "", "summary": ""}], "all_summary": ""}
 
-                        Please give me a Tarot card reading using only the information from your knowledge base, without any analysis or code interpretation. Just explain their meanings based on your existing knowledge, but also written in a sassy voice.
+                        Please give me a Tarot card reading using only the information from your knowledge base, without any analysis or code interpretation. Just explain their meanings based on your existing knowledge, written in your sassy voice.
                     `,
                 },
             ],
