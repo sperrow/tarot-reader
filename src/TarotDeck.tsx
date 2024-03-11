@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAutoAnimate } from '@formkit/auto-animate/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Card } from './types/Card.ts';
 import cards from './cards.json';
 import TarotCard from './TarotCard.tsx';
@@ -7,6 +7,26 @@ import TarotCard from './TarotCard.tsx';
 type SelectedCards = Set<number>;
 type CardsProps = {
     start: (cards: Card[]) => void;
+};
+
+const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            delayChildren: 0.01,
+            staggerChildren: 0.03,
+        },
+    },
+};
+
+const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1,
+    },
 };
 
 const unshuffled = cards.map((card) => {
@@ -30,7 +50,6 @@ while (cardIndices.length > 0) {
 function TarotDeck({ start }: CardsProps) {
     const [deck, setDeck] = useState(shuffled);
     const [selectedCards, setSelectedCards] = useState<SelectedCards>(new Set());
-    const [parent] = useAutoAnimate({ duration: 1000 });
     const [classes, setClasses] = useState('max-w-md flex flex-wrap justify-center items-center ml-8');
     const handleClick = (index: number) => {
         const newSet = new Set(selectedCards);
@@ -58,13 +77,21 @@ function TarotDeck({ start }: CardsProps) {
     };
 
     return (
-        <div ref={parent} className={classes}>
-            {deck.map((card) => (
-                <div key={card.index} className="-ml-8">
-                    <TarotCard card={card} onClick={handleClick} selected={selectedCards.has(card.index)}></TarotCard>
-                </div>
-            ))}
-        </div>
+        <AnimatePresence>
+            <motion.ul className={classes} variants={container} initial="hidden" animate="visible" layout>
+                {deck.map((card) => (
+                    <motion.li key={card.index} className="item" variants={item} layout>
+                        <div className="-ml-8">
+                            <TarotCard
+                                card={card}
+                                onClick={handleClick}
+                                selected={selectedCards.has(card.index)}
+                            ></TarotCard>
+                        </div>
+                    </motion.li>
+                ))}
+            </motion.ul>
+        </AnimatePresence>
     );
 }
 
