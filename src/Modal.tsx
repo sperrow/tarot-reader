@@ -43,11 +43,11 @@ function Modal({ card, open, close }: ModalProps) {
                         <div className="flex min-h-full items-center justify-center p-4">
                             <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-slate-700 p-6 text-center text-white align-middle shadow-xl transition-all">
                                 <div className="flex justify-center items-center flex-col">
-                                    <img className="w-1/2 lg:w-3/4" src={`cards/${card.image}`} alt="card face" />
+                                    <img className="w-1/2 lg:w-3/4" src={`NeonRainbow/${card.image}`} alt="card face" />
                                     <Dialog.Title as="h3" className="text-lg font-medium leading-6 mt-8">
                                         {card.name}
                                     </Dialog.Title>
-                                    <p className="mt-4">{card.summary}</p>
+                                    <p className="mt-8 mx-8">{card.summary}</p>
                                     <div className="mt-8">
                                         <button
                                             className="font-sans font-sans text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-500 dark:focus:ring-gray-700 dark:border-gray-700"

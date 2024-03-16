@@ -13,10 +13,18 @@ function App() {
             <main className="pb-16">
                 <TarotController></TarotController>
             </main>
-            <footer className="absolute bottom-0 left-0 w-full pb-8 flex justify-center align-end">
-                <a href="https://github.com/sperrow/tarot-reader" target="_blank">
-                    <img src={github} alt="github" className="w-5" />
-                </a>
+            <footer className="absolute bottom-0 left-0 w-full pb-8 flex flex-col justify-center items-center align-end">
+                <div>
+                    <a href="https://github.com/sperrow/tarot-reader" target="_blank" aria-label="github">
+                        <img src={github} alt="github" className="w-5" />
+                    </a>
+                </div>
+                <div className="mt-4 text-xs">
+                    Deck by{' '}
+                    <a href="https://www.etsy.com/shop/Zeedigns" target="_blank">
+                        Zeedigns
+                    </a>
+                </div>
             </footer>
         </>
     );

@@ -38,7 +38,7 @@ function TarotCard({ card, selected, reading, onClick }: TarotCardProps) {
                     <div className="flip-card-back">
                         <img
                             className="w-full h-full flip-card-image"
-                            src={`${import.meta.env.BASE_URL}cards/${card.image}`}
+                            src={`${import.meta.env.BASE_URL}NeonRainbow/${card.image}`}
                             alt="card face"
                         />
                     </div>
