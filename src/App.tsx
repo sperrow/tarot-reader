@@ -4,10 +4,10 @@ import TarotController from './TarotController.tsx';
 
 function App() {
     return (
-        <>
+        <div className='container mx-auto p-4 min-h-screen text-center'>
             <header className="flex flex-col items-center justify-center">
-                <div className="text-4xl mb-8">
-                    <h1>Tarot Reading 2</h1>
+                <div className="text-4xl my-8">
+                    <h1>Tarot Reading</h1>
                 </div>
             </header>
             <main className="pb-16">
@@ -26,7 +26,7 @@ function App() {
                     </a>
                 </div>
             </footer>
-        </>
+        </div>
     );
 }
 
