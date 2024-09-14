@@ -7,7 +7,7 @@ function App() {
         <>
             <header className="flex flex-col items-center justify-center">
                 <div className="text-4xl mb-8">
-                    <h1>Tarot Reading</h1>
+                    <h1>Tarot Reading 2</h1>
                 </div>
             </header>
             <main className="pb-16">
