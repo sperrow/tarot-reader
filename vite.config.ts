@@ -1,8 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { VitePluginRadar } from 'vite-plugin-radar';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/tarot-reader/'
-})
+    plugins: [
+        VitePluginRadar({
+            // Google Tag Manager (multiple tag can be set with an array)
+            gtm: [{ id: 'GTM-TPS27J3N' }],
+        }),
+        react(),
+    ],
+    base: '/tarot-reader/',
+});
